@@ -2,19 +2,13 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta
-        name="description"
-        content="A TrailQuest adatvédelmi irányelvei."
-    >
-
+    <meta name="description" content="A TrailQuest adatvédelmi irányelvei.">
     <title>TrailQuest – Adatvédelmi irányelvek</title>
 
     <style>
         :root {
-            --lime: #9be33c;
+            --lime: #C5FF29;
             --pine: #123d2b;
             --pine-dark: #0b281d;
             --bg: #f4f8f2;
@@ -24,173 +18,80 @@
             --border: #dce7df;
         }
 
-        * {
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
 
         body {
             margin: 0;
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                Roboto,
-                Helvetica,
-                Arial,
-                sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background: var(--bg);
             color: var(--text);
             line-height: 1.7;
         }
 
         header {
-            background:
-                linear-gradient(
-                    135deg,
-                    var(--pine-dark),
-                    var(--pine)
-                );
+            background: linear-gradient(135deg, var(--pine-dark), var(--pine));
             color: white;
-            padding: 55px 20px;
-        }
-
-        .header-content {
-            max-width: 900px;
-            margin: auto;
+            padding: 60px 20px;
+            text-align: center;
         }
 
         .logo {
             display: inline-block;
             background: var(--lime);
             color: var(--pine-dark);
-            padding: 8px 15px;
-            border-radius: 10px;
-            font-weight: 800;
-            font-size: 14px;
-            letter-spacing: 1px;
+            padding: 8px 20px;
+            border-radius: 12px;
+            font-weight: 900;
+            font-size: 16px;
+            letter-spacing: 2px;
             margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(197, 255, 41, 0.3);
         }
 
-        h1 {
-            margin: 0 0 10px;
-            font-size: clamp(32px, 6vw, 52px);
-            line-height: 1.15;
-        }
-
-        .subtitle {
-            margin: 0;
-            color: #dbeadd;
-            font-size: 18px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+        h1 { margin: 0 0 10px; font-size: clamp(28px, 5vw, 48px); }
+        .subtitle { color: #dbeadd; font-size: 18px; margin: 0; }
+        .container { max-width: 850px; margin: 40px auto; padding: 0 20px; }
 
         .updated {
             background: #eaf4e6;
-            border-left: 4px solid var(--lime);
-            padding: 15px 18px;
+            border-left: 5px solid var(--lime);
+            padding: 15px 20px;
             border-radius: 8px;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
+            font-weight: 600;
         }
 
         section {
             background: var(--card);
             border: 1px solid var(--border);
-            border-radius: 14px;
-            padding: 28px;
-            margin-bottom: 22px;
-            box-shadow: 0 3px 12px rgba(18, 61, 43, 0.04);
+            border-radius: 16px;
+            padding: 35px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(18, 61, 43, 0.05);
         }
 
-        h2 {
-            color: var(--pine);
-            margin-top: 0;
-            font-size: 25px;
-        }
-
-        h3 {
-            color: var(--pine);
-            font-size: 19px;
-            margin-top: 25px;
-        }
-
-        p {
-            margin: 12px 0;
-        }
-
-        ul {
-            padding-left: 25px;
-        }
-
-        li {
-            margin: 8px 0;
-        }
-
-        strong {
-            color: var(--pine-dark);
-        }
-
-        a {
-            color: #287b45;
-            font-weight: 600;
-        }
-
-        .highlight {
-            background: #f0f8e9;
-            border: 1px solid #d7eac8;
-            border-radius: 10px;
-            padding: 18px;
-            margin: 18px 0;
-        }
+        h2 { color: var(--pine); margin-top: 0; font-size: 24px; border-bottom: 2px solid var(--bg); padding-bottom: 10px; }
+        h3 { color: var(--pine-dark); font-size: 19px; margin-top: 25px; }
+        .highlight { background: #fff9e6; border: 1px solid #ffeeba; border-radius: 12px; padding: 20px; margin: 20px 0; }
+        
+        a { color: #006B36; text-decoration: underline; font-weight: bold; }
+        a:hover { color: var(--pine); }
 
         footer {
             background: var(--pine-dark);
             color: #cbd9d0;
             text-align: center;
-            padding: 35px 20px;
-            margin-top: 50px;
+            padding: 40px 20px;
+            margin-top: 60px;
         }
 
-        footer strong {
-            color: var(--lime);
-        }
-
-        .back-to-top {
-            display: inline-block;
-            margin-top: 20px;
-            color: var(--lime);
-        }
+        footer strong { color: var(--lime); }
+        .back-to-top { display: inline-block; margin-top: 20px; color: var(--lime); text-decoration: none; }
 
         @media (max-width: 600px) {
-            header {
-                padding: 40px 18px;
-            }
-
-            .container {
-                margin-top: 25px;
-                padding: 0 12px;
-            }
-
-            section {
-                padding: 21px;
-                border-radius: 12px;
-            }
-
-            h2 {
-                font-size: 22px;
-            }
-
-            body {
-                font-size: 15px;
-            }
+            section { padding: 20px; }
+            h1 { font-size: 32px; }
         }
     </style>
 </head>
@@ -198,477 +99,101 @@
 <body id="top">
 
 <header>
-    <div class="header-content">
-        <div class="logo">TRAILQUEST</div>
-
-        <h1>Adatvédelmi irányelvek</h1>
-
-        <p class="subtitle">
-            Információ arról, hogyan kezeli a TrailQuest az Ön adatait.
-        </p>
-    </div>
+    <div class="logo">TRAILQUEST</div>
+    <h1>Adatvédelmi irányelvek</h1>
+    <p class="subtitle">Biztonság és átláthatóság minden vándor számára.</p>
 </header>
 
 <main class="container">
 
     <div class="updated">
-        <strong>Utolsó frissítés:</strong> 2026. augusztus 19.
+        Utolsó frissítés: 2026. augusztus 22.
     </div>
 
     <section>
         <h2>1. Bevezetés</h2>
-
         <p>
-            A TrailQuest egy túrázáshoz, kempingezéshez és szabadtéri
-            tevékenységekhez készült mobilalkalmazás, amely játékos
-            küldetésekkel, GPS-alapú útvonalrögzítéssel, térképes
-            funkciókkal és egyéb szabadtéri funkciókkal segíti a
-            felhasználókat.
+            A <strong>TrailQuest</strong> egy professzionális túrázó alkalmazás, amely a természetjárást játékos küldetésekkel, kiterjesztett valósággal (AR) és modern biztonsági funkciókkal ötvözi. Elkötelezettek vagyunk a felhasználók magánéletének védelme és adatainak biztonságos kezelése mellett.
         </p>
-
         <p>
-            Jelen adatvédelmi irányelvek ismertetik, hogy a TrailQuest
-            milyen adatokat kezel, milyen célból használja azokat,
-            milyen szolgáltatókkal kerülhetnek kapcsolatba az adatok,
-            valamint milyen jogok illetik meg a felhasználókat.
-        </p>
-
-        <p>
-            A TrailQuest fejlesztője és adatkezelője:
-        </p>
-
-        <p>
-            <strong>György Szabó</strong><br>
-            E-mail:
-            <a href="mailto:trailquestsupport@gmail.com">
-                trailquestsupport@gmail.com
-            </a>
+            <strong>Adatkezelő adatai:</strong><br>
+            Név: György Szabó<br>
+            E-mail: <a href="mailto:trailquestsupport@gmail.com">trailquestsupport@gmail.com</a><br>
+            Weboldal: <a href="https://smarlov.github.io/trailquest-privacy/">https://smarlov.github.io/trailquest-privacy/</a>
         </p>
     </section>
 
+    <section>
+        <h2>2. Kezelt adatok köre</h2>
+        
+        <h3>2.1. Helyadatok (GPS) – Háttérben is</h3>
+        <p>
+            Az alkalmazás <strong>háttérbeli helyadat-hozzáférést</strong> kér. Ez szükséges a túrák pontos rögzítéséhez (breadcrumb trail), a megtett távolság méréséhez és a sebességkorlát ellenőrzéséhez (csalásvédelem), még akkor is, ha a kijelző le van zárva.
+        </p>
+
+        <h3>2.2. SOS és SMS Küldés</h3>
+        <p>
+            Vészhelyzet esetén a felhasználó által kezdeményezett SOS funkció <strong>valódi SMS-t küld</strong> a megadott kapcsolattartónak. Az üzenet tartalmazza a pontos GPS koordinátákat és egy Google Maps linket a gyors mentés érdekében.
+        </p>
+
+        <h3>2.3. Kamera és AR (Kiterjesztett Valóság)</h3>
+        <p>
+            Az alkalmazás hozzáférést kér a kamerához az alábbi célokból:
+            <ul>
+                <li><strong>Küldetések igazolása:</strong> Bizonyos célpontok (pl. barlangok, források) lefotózása.</li>
+                <li><strong>AR Csúcsnéző:</strong> A környező hegycsúcsok adatainak valós idejű megjelenítése a kamera képén.</li>
+            </ul>
+        </p>
+
+        <h3>2.4. Health Connect (Google Fit)</h3>
+        <p>
+            A felhasználó engedélyével a TrailQuest szinkronizálja a befejezett túrák adatait (távolság, időtartam) az Android <strong>Health Connect</strong> rendszerével, így az eredmények láthatóak más fitnesz alkalmazásokban is.
+        </p>
+
+        <h3>2.5. Túra Napló és Profil</h3>
+        <p>
+            Helyileg tároljuk a korábbi túrák útvonalait, a megszerzett XP pontokat, szinteket és a kiválasztott nyelvi beállításokat.
+        </p>
+    </section>
 
     <section>
-        <h2>2. Milyen adatokat kezelünk?</h2>
-
-        <p>
-            Az alkalmazás funkcióitól és a felhasználó által használt
-            szolgáltatásoktól függően az alábbi adatokat kezelhetjük.
-        </p>
-
-        <h3>2.1. Fiók- és profiladatok</h3>
-
-        <p>
-            Amennyiben a felhasználó fiókot hoz létre, az alkalmazás
-            kezelheti a fiók működéséhez szükséges adatokat, például:
-        </p>
-
+        <h2>3. Harmadik felek és szolgáltatók</h2>
+        <p>Az alkalmazás az alábbi külső szolgáltatásokat használja a működéshez:</p>
         <ul>
-            <li>felhasználói azonosító;</li>
-            <li>megjelenítési név;</li>
-            <li>profilkép, ha a felhasználó ilyet biztosít;</li>
-            <li>bejelentkezéshez kapcsolódó adatok.</li>
+            <li><strong>OpenStreetMap / Carto:</strong> Térképszelvények biztosítása.</li>
+            <li><strong>Ventusky:</strong> Élő csapadékradar adatok megjelenítése.</li>
+            <li><strong>Google ML Kit:</strong> On-device (helyi) képelemzés a küldetésekhez – a képek nem kerülnek felhőbe.</li>
+            <li><strong>Google Play Billing:</strong> Prémium előfizetések biztonságos kezelése.</li>
         </ul>
+    </section>
 
-
-        <h3>2.2. Facebook bejelentkezés</h3>
-
+    <section>
+        <h2>4. Adatok megőrzése és törlése</h2>
         <p>
-            A TrailQuest lehetőséget biztosíthat Facebook-fiókkal történő
-            bejelentkezésre.
+            Minden rögzített túra és profiladat az Ön készülékén, illetve a biztonságos Firebase adatbázisban tárolódik (ranglista esetén). Önnek bármikor joga van kérni adatai törlését az alkalmazás beállításaiban vagy e-mailben.
         </p>
-
-        <p>
-            Facebook-bejelentkezés használata esetén a Facebook által
-            biztosított hitelesítési adatokat és a bejelentkezéshez
-            szükséges profiladatokat kezelhetjük.
-        </p>
-
-        <p>
-            A Facebook által végzett adatkezelésre a Meta saját
-            adatvédelmi irányelvei vonatkoznak.
-        </p>
-
-
-        <h3>2.3. Helyadatok és GPS</h3>
-
-        <p>
-            A TrailQuest GPS- és helymeghatározási adatokat használhat
-            az alkalmazás olyan funkcióihoz, amelyeknél a felhasználó
-            helyzete szükséges.
-        </p>
-
-        <p>Ide tartozhat például:</p>
-
-        <ul>
-            <li>útvonalak rögzítése;</li>
-            <li>megtett távolság mérése;</li>
-            <li>GPS-alapú küldetések ellenőrzése;</li>
-            <li>helyszínalapú küldetések;</li>
-            <li>térképes funkciók;</li>
-            <li>az SOS funkcióhoz kapcsolódó helymeghatározás.</li>
-        </ul>
-
         <div class="highlight">
-            <strong>Fontos:</strong>
-            A helyadatokat csak akkor használjuk, amikor az adott
-            alkalmazásfunkció működéséhez szükséges, illetve amikor
-            ehhez a felhasználó engedélyt adott.
-        </div>
-
-
-        <h3>2.4. Fényképek és kamera</h3>
-
-        <p>
-            Egyes küldetések teljesítéséhez a TrailQuest fényképes
-            bizonyítékot kérhet.
-        </p>
-
-        <p>
-            Ilyen esetben az alkalmazás hozzáférést kérhet a készülék
-            kamerájához, illetve a felhasználó által kiválasztott vagy
-            készített fényképekhez.
-        </p>
-
-        <p>
-            A fényképeket kizárólag az adott funkció biztosításához
-            használjuk, a tényleges tárolás és továbbítás módját az
-            alkalmazás aktuális működése határozza meg.
-        </p>
-
-
-        <h3>2.5. Küldetések, XP és alkalmazáson belüli adatok</h3>
-
-        <p>
-            A TrailQuest a játékos előrehaladásához kapcsolódó adatokat
-            kezelhet, például:
-        </p>
-
-        <ul>
-            <li>teljesített küldetések;</li>
-            <li>XP és szintek;</li>
-            <li>eredmények és achievementek;</li>
-            <li>alkalmazásbeállítások;</li>
-            <li>útvonalakhoz és aktivitásokhoz kapcsolódó adatok.</li>
-        </ul>
-
-
-        <h3>2.6. Időjárási adatok</h3>
-
-        <p>
-            Az időjárási funkció használatakor a TrailQuest az időjárási
-            információk lekéréséhez szükséges helyadatokat vagy
-            koordinátákat továbbíthatja az időjárási szolgáltatás felé.
-        </p>
-
-        <p>
-            A TrailQuest időjárási adatok biztosításához az Open-Meteo
-            szolgáltatását használhatja.
-        </p>
-
-
-        <h3>2.7. Térképes adatok</h3>
-
-        <p>
-            Az alkalmazás térképes funkciókat használhat, többek között
-            OpenStreetMap-alapú térképadatok megjelenítésére.
-        </p>
-
-        <p>
-            A térképszolgáltatások használatakor bizonyos technikai
-            adatok, illetve a térképfunkció működéséhez szükséges
-            helyadatok továbbításra kerülhetnek a megfelelő
-            szolgáltatókhoz.
-        </p>
-
-
-        <h3>2.8. Előfizetések és vásárlások</h3>
-
-        <p>
-            A TrailQuest prémium funkciókat és előfizetéseket kínálhat
-            a Google Play rendszeren keresztül.
-        </p>
-
-        <p>
-            A fizetési tranzakciókat a Google Play kezeli. A TrailQuest
-            nem fér hozzá a felhasználó teljes bankkártyaszámához vagy
-            banki bejelentkezési adataihoz.
-        </p>
-
-        <p>
-            Az alkalmazás kezelheti a vásárlás állapotához szükséges
-            információkat, például azt, hogy a felhasználó rendelkezik-e
-            aktív Premium előfizetéssel.
-        </p>
-
-
-        <h3>2.9. Technikai adatok</h3>
-
-        <p>
-            Az alkalmazás működése során bizonyos technikai információk
-            automatikusan kezelődhetnek, például:
-        </p>
-
-        <ul>
-            <li>készüléktípus;</li>
-            <li>Android-verzió;</li>
-            <li>alkalmazásverzió;</li>
-            <li>technikai hibákhoz kapcsolódó információk;</li>
-            <li>hálózati és kapcsolódási információk.</li>
-        </ul>
-    </section>
-
-
-    <section>
-        <h2>3. Mire használjuk az adatokat?</h2>
-
-        <p>Az adatokat az alábbi célokra használhatjuk:</p>
-
-        <ul>
-            <li>az alkalmazás biztosítása és működtetése;</li>
-            <li>felhasználói fiókok kezelése;</li>
-            <li>küldetések teljesítésének ellenőrzése;</li>
-            <li>GPS-alapú útvonalrögzítés és távolságmérés;</li>
-            <li>térképes funkciók biztosítása;</li>
-            <li>időjárási információk biztosítása;</li>
-            <li>fényképes küldetések kezelése;</li>
-            <li>Premium előfizetések kezelése;</li>
-            <li>az alkalmazás biztonságának fenntartása;</li>
-            <li>hibák és technikai problémák feltárása;</li>
-            <li>az alkalmazás fejlesztése és javítása.</li>
-        </ul>
-    </section>
-
-
-    <section>
-        <h2>4. Adatok megosztása harmadik felekkel</h2>
-
-        <p>
-            A TrailQuest nem értékesíti a felhasználók személyes adatait.
-        </p>
-
-        <p>
-            Bizonyos adatokat azonban a szolgáltatás működéséhez
-            szükséges külső szolgáltatók kezelhetnek.
-        </p>
-
-        <p>Ide tartozhatnak többek között:</p>
-
-        <ul>
-            <li>
-                <strong>Meta / Facebook</strong> –
-                Facebook-bejelentkezés;
-            </li>
-
-            <li>
-                <strong>Google Play</strong> –
-                alkalmazáson belüli vásárlások és előfizetések;
-            </li>
-
-            <li>
-                <strong>Open-Meteo</strong> –
-                időjárási adatok;
-            </li>
-
-            <li>
-                <strong>OpenStreetMap és kapcsolódó térképszolgáltatások</strong> –
-                térképes funkciók.
-            </li>
-        </ul>
-
-        <p>
-            A külső szolgáltatók saját adatvédelmi szabályzataik alapján
-            is kezelhetnek adatokat.
-        </p>
-    </section>
-
-
-    <section>
-        <h2>5. Adatbiztonság</h2>
-
-        <p>
-            Ésszerű technikai és szervezési intézkedéseket alkalmazunk
-            annak érdekében, hogy megvédjük a felhasználói adatokat a
-            jogosulatlan hozzáféréstől, módosítástól, elvesztéstől vagy
-            illetéktelen nyilvánosságra hozataltól.
-        </p>
-
-        <p>
-            Az interneten keresztül továbbított adatok biztonsága azonban
-            nem garantálható teljes mértékben.
-        </p>
-    </section>
-
-
-    <section>
-        <h2>6. Adatmegőrzés</h2>
-
-        <p>
-            A személyes adatokat csak addig őrizzük meg, ameddig az
-            szükséges az alkalmazás működéséhez, a felhasználó által
-            igénybe vett szolgáltatások biztosításához, jogi
-            kötelezettségek teljesítéséhez vagy jogos üzleti célokhoz.
-        </p>
-
-        <p>
-            Amennyiben egy adat további megőrzése már nem szükséges,
-            azt töröljük vagy anonimizáljuk, amennyiben ez technikailag
-            és jogilag lehetséges.
-        </p>
-    </section>
-
-
-    <section>
-        <h2>7. Fiók és adatok törlése</h2>
-
-        <p>
-            A felhasználó kérheti TrailQuest-fiókja törlését.
-        </p>
-
-        <p>
-            Fióktörlési kérelem benyújtásához kérjük, vegye fel velünk
-            a kapcsolatot az alábbi e-mail-címen:
-        </p>
-
-        <p>
-            <a href="mailto:trailquestsupport@gmail.com">
-                trailquestsupport@gmail.com
-            </a>
-        </p>
-
-        <p>
-            A törlési kérelem feldolgozása során a TrailQuest törli a
-            fiókhoz kapcsolódó személyes adatokat, kivéve azokat az
-            adatokat, amelyek megőrzését jogszabály írja elő, illetve
-            amelyek megőrzése jogos jogi igények érvényesítéséhez vagy
-            védelméhez szükséges.
-        </p>
-
-        <div class="highlight">
-            <strong>Fontos:</strong>
-            A fiók törlése az aktív Premium előfizetés Google Playen
-            történő automatikus lemondását nem feltétlenül jelenti.
-            Az előfizetést a Google Play előfizetési beállításaiban
-            külön kell lemondani.
+            <strong>Megjegyzés:</strong> Az SOS funkcióhoz megadott telefonszámot kizárólag a segélykérő üzenet címzéseként használjuk, azt marketing célokra nem használjuk fel és harmadik félnek nem adjuk át.
         </div>
     </section>
 
-
     <section>
-        <h2>8. Gyermekek adatainak védelme</h2>
-
+        <h2>5. Kapcsolat</h2>
         <p>
-            A TrailQuest nem gyermekeknek szánt alkalmazás.
-        </p>
-
-        <p>
-            Tudatosan nem gyűjtünk gyermekektől személyes adatokat.
-            Amennyiben tudomást szerzünk arról, hogy egy gyermek
-            személyes adatokat adott meg számunkra, megtesszük az
-            ésszerűen szükséges lépéseket az ilyen adatok törlésére.
-        </p>
-    </section>
-
-
-    <section>
-        <h2>9. Helyadatok és biztonság</h2>
-
-        <p>
-            A TrailQuest túrázással és szabadtéri tevékenységekkel
-            kapcsolatos funkciói miatt helyadatokat használhat.
-        </p>
-
-        <p>
-            A GPS-adatok segítségével az alkalmazás képes lehet például
-            egy megtett útvonal rögzítésére, egy adott távolság
-            ellenőrzésére vagy egy helyszínalapú küldetés teljesítésének
-            ellenőrzésére.
-        </p>
-
-        <p>
-            Az SOS funkció használata esetén a helyadatok kezelése a
-            funkció működéséhez szükséges mértékben történhet.
-        </p>
-
-        <div class="highlight">
-            <strong>Biztonsági figyelmeztetés:</strong>
-            A TrailQuest nem helyettesíti a segélyszolgálatokat,
-            túravezetőt vagy egyéb professzionális segítséget.
-            Az SOS funkció elérhetősége a készülék, a hálózati
-            kapcsolat és az alkalmazás aktuális működésétől függhet.
-        </div>
-    </section>
-
-
-    <section>
-        <h2>10. Külső szolgáltatások</h2>
-
-        <p>
-            A TrailQuest bizonyos funkciói külső szolgáltatásoktól
-            függhetnek. Ezek a szolgáltatások saját feltételekkel és
-            adatvédelmi szabályzatokkal rendelkezhetnek.
-        </p>
-
-        <p>
-            A felhasználóknak javasoljuk, hogy a külső szolgáltatások
-            saját adatvédelmi tájékoztatóit is tekintsék át.
-        </p>
-    </section>
-
-
-    <section>
-        <h2>11. A szabályzat módosítása</h2>
-
-        <p>
-            Fenntartjuk a jogot jelen adatvédelmi irányelvek módosítására,
-            például az alkalmazás funkcióinak, a vonatkozó jogszabályoknak
-            vagy az általunk használt szolgáltatásoknak a változása miatt.
-        </p>
-
-        <p>
-            A módosított adatvédelmi irányelveket ezen az oldalon tesszük
-            közzé, és a „Utolsó frissítés” dátumát ennek megfelelően
-            módosítjuk.
-        </p>
-    </section>
-
-
-    <section>
-        <h2>12. Kapcsolat</h2>
-
-        <p>
-            Adatvédelmi kérdés, hozzáférési kérelem, törlési kérelem vagy
-            egyéb adatvédelmi megkeresés esetén az alábbi e-mail-címen
-            lehet kapcsolatba lépni velünk:
-        </p>
-
-        <p>
-            <strong>E-mail:</strong>
-            <a href="mailto:trailquestsupport@gmail.com">
-                trailquestsupport@gmail.com
-            </a>
-        </p>
-
-        <p>
-            <strong>Alkalmazás:</strong> TrailQuest
-        </p>
-
-        <p>
-            <strong>Adatkezelő:</strong> György Szabó
+            Bármilyen adatvédelmi kérdéssel forduljon hozzánk bizalommal:<br>
+            E-mail: <a href="mailto:trailquestsupport@gmail.com">trailquestsupport@gmail.com</a>
         </p>
     </section>
 
 </main>
 
 <footer>
-    <strong>TrailQuest</strong>
-    <br>
-    Adatvédelmi irányelvek
-    <br>
-
-    <a class="back-to-top" href="#top">
-        Vissza az oldal tetejére ↑
-    </a>
+    <strong>TrailQuest</strong><br>
+    © 2026 - Minden jog fenntartva.<br>
+    <a class="back-to-top" href="#top">Vissza a tetejére ↑</a>
 </footer>
 
+</body>
+</html>
 </body>
 </html>
